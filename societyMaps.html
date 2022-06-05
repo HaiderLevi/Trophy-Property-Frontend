@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Maps</title>
+  </head>
+  <body>
+    <!--------------------------- navbar --------------------------------------------->
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand pt-lg-1" href="#"
+          ><img src="new-logo.PNG" alt="Trophy Property" class="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Company
+              </a>
+              <ul
+                class="dropdown-menu dropdown-bg"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a class="dropdown-item" href="aboutus.html">About Us</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="team.html" target="_blank"
+                    >Our Team</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Societies
+              </a>
+              <ul
+                class="dropdown-menu dropdown-bg"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a class="dropdown-item" href="society.html">DHA Lahore</a>
+                </li>
+                <li><a class="dropdown-item" href="#">DHA Bahawalpur</a></li>
+                <li><a class="dropdown-item" href="#">DHA Multan</a></li>
+                <li><a class="dropdown-item" href="#">DHA Quetta</a></li>
+                <li><a class="dropdown-item" href="#">DHA Peshawar</a></li>
+                <li><a class="dropdown-item" href="#">DHA Gujranwala</a></li>
+                <li><hr class="dropdown-divider text-white" /></li>
+                <li><a class="dropdown-item" href="#">Lake City Lahore</a></li>
+                <li><a class="dropdown-item" href="#">NFC Lahore</a></li>
+                <li><a class="dropdown-item" href="#">State Life Lahore</a></li>
+                <li><a class="dropdown-item" href="#">LDA City Lahore</a></li>
+              </ul>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="societyMaps.html">Maps</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="videos.html">Videos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Follow Us
+              </a>
+              <ul
+                class="dropdown-menu dropdown-bg"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://www.facebook.com/Trophy.Properties.Lakecity/"
+                    >Facebook</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">Twitter</a></li>
+                <li><hr class="dropdown-divider text-white" /></li>
+                <li>
+                  <a class="dropdown-item" href="https://youtu.be/YcbaEhz9Hbo"
+                    >Youtube</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <button class="btn btn-space signin-btn" type="submit">
+              Sign In
+            </button>
+            <button class="btn btn-space signup-btn" type="submit">
+              Sign Up
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!--------------------------------- Societies Maps Section -------------------------------------->
+
+    <section class="mt-5 mb-5">
+      <h1 class="text-center text-decoration-underline p-2">Society Maps</h1>
+      <h5 class="text-center lead">Click on any box to view enlarged Map</h5>
+      <div class="main-div-map-image-gallery">
+        <!-- The grid: 3 columns -->
+        <div class="map-row">
+          <div class="map-column">
+            <img
+              src="golden-waves-backgroun.jpg"
+              alt="Map"
+              onclick="myFunction(this);"
+              data-image="Final Maps/Bahria Orchard phase 1,2 Map.jpg"
+            />
+            <div class="centered">
+              <h5>Bahria Orchard Phase 1,2 Map</h5>
+            </div>
+          </div>
+          <div class="map-column">
+            <img
+              src="golden-waves-backgroun.jpg"
+              alt="Map"
+              onclick="myFunction(this);"
+              data-image="Final Maps/Bahria Orchard Phase 3,4 and EMC Map.jpg"
+            />
+            <div class="centered">
+              <h5>Bahria Orchard Phase 3,4 and EMC Map</h5>
+            </div>
+          </div>
+          <div class="map-column">
+            <img
+              src="golden-waves-backgroun.jpg"
+              alt="Map"
+              onclick="myFunction(this);"
+              data-image="Final Maps/Dha 9 Prism Lahore Map.jpg"
+            />
+            <div class="centered">
+              <h5>DHA 9 Prism Lahore Map</h5>
+            </div>
+          </div>
+          <div class="map-column">
+            <img
+              src="golden-waves-backgroun.jpg"
+              alt="Map"
+              onclick="myFunction(this);"
+              data-image="Final Maps/DHA Lahore Phase 8 with extension Map.jpg"
+            />
+            <div class="centered">
+              <h5>DHA Lahore Phase 8 with extension Map</h5>
+            </div>
+          </div>
+          <div class="map-column">
+            <img
+              src="golden-waves-backgroun.jpg"
+              alt="Map"
+              onclick="myFunction(this);"
+              data-image="Final Maps/DHA Peshawar Map.jpg"
+            />
+            <div class="centered">
+              <h5>DHA Peshawar Map</h5>
+            </div>
+          </div>
+          <div class="map-column">
+            <img
+              src="golden-waves-backgroun.jpg"
+              alt="Map"
+              onclick="myFunction(this);"
+              data-image="Final Maps/Etihad Town Lahore Phase 1 Map.jpg"
+            />
+            <div class="centered">
+              <h5>Etihad Town Lahore Phase 1 Map</h5>
+            </div>
+          </div>
+          <div class="map-column">
+            <img
+              src="golden-waves-backgroun.jpg"
+              alt="Map"
+              onclick="myFunction(this);"
+              data-image="Final Maps/Gulberg Phase 1,2,3,4 Map.jpg"
+            />
+            <div class="centered">
+              <h5>Gulberg Phase 1,2,3,4 Map</h5>
+            </div>
+          </div>
+          <div class="map-column">
+            <img
+              src="golden-waves-backgroun.jpg"
+              alt="Map"
+              onclick="myFunction(this);"
+              data-image="Final Maps/Khayaban-e-Amin Lahore Map.jpg"
+            />
+            <div class="centered">
+              <h5>Khayaban-e-Amin Lahore Map</h5>
+            </div>
+          </div>
+          <div class="map-column">
+            <img
+              src="golden-waves-backgroun.jpg"
+              alt="Map"
+              onclick="myFunction(this);"
+              data-image="Final Maps/Lake City and Mid City Map.jpg"
+            />
+            <div class="centered">
+              <h5>Lake City and Mid City Map</h5>
+            </div>
+          </div>
+          <div class="map-column">
+            <img
+              src="golden-waves-backgroun.jpg"
+              alt="Map"
+              onclick="myFunction(this);"
+              data-image="Final Maps/Palm City Lahore Map.jpg"
+            />
+            <div class="centered">
+              <h5>Palm City Lahore Map</h5>
+            </div>
+          </div>
+          <div class="map-column">
+            <img
+              src="golden-waves-backgroun.jpg"
+              alt="Map"
+              onclick="myFunction(this);"
+              data-image="Final Maps/State Life Phase 2 Lahore Map.jpg"
+            />
+            <div class="centered">
+              <h5>State Life Phase 2 Lahore Map</h5>
+            </div>
+          </div>
+          <div class="map-column">
+            <img
+              src="golden-waves-backgroun.jpg"
+              alt="Map"
+              onclick="myFunction(this);"
+              data-image="Final Maps/Valencia Lahore Map.jpg"
+            />
+            <div class="centered">
+              <h5>Valencia Lahore Map</h5>
+            </div>
+          </div>
+          <div class="map-column">
+            <img
+              src="golden-waves-backgroun.jpg"
+              alt="Map"
+              onclick="myFunction(this);"
+              data-image="Final Maps/SUI GAS Housing Scheme Phase 1.JPG"
+            />
+            <div class="centered">
+              <h5>Sui Gas Housing Scheme Phase 1</h5>
+            </div>
+          </div>
+          <div class="map-column">
+            <img
+              src="golden-waves-backgroun.jpg"
+              alt="Map"
+              onclick="myFunction(this);"
+              data-image="Final Maps/Chinar Bagh Scheme.JPG"
+            />
+            <div class="centered">
+              <h5>Chinar Bagh Scheme Map</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- The expanding image container -->
+      <div class="map-gallery-container">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn"
+          >&times;</span
+        >
+
+        <!-- Expanded image -->
+        <img id="expandedImg" style="width: 100%; height: 100vh" />
+
+        <!-- Image text -->
+        <div id="imgtext"></div>
+        <div style="display: flex; justify-content: center; margin-top: 15px">
+          <a
+            href="currentImage"
+            download="Map"
+            class="btn btn-danger"
+            id="download-img"
+            >Download Map
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------------------------- Footer ---------------------------------->
+    <section class="pt-3">
+      <div class="container-fluid footer-bg text-white">
+        <div class="row p-3">
+          <div class="col-12 col-lg-6">
+            <h1>TrophyProperties.com</h1>
+            <h4 class="pb-2"><em>Always at your service!!!</em> 🏠</h4>
+            <img src="new-logo.PNG" alt="logo" />
+          </div>
+          <div class="col-6 col-lg-3 p-3">
+            <h3>Join us</h3>
+            <ul class="list-unstyled footer-list1">
+              <li>
+                <a href="#">Sign in</a>
+              </li>
+              <li>
+                <a href="#">Sign up</a>
+              </li>
+              <li>
+                <a href="aboutus.html">About</a>
+              </li>
+              <li>
+                <a href="team.html">Team</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-3 p-3">
+            <h3>Follow us</h3>
+            <ul class="list-unstyled footer-list1">
+              <li>
+                <a href="https://www.facebook.com/Trophy.Properties.Lakecity/">
+                  <i class="fab fa-facebook fa-2x"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-google"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container text-center footer-contact">
+          <h2>Contact us</h2>
+          <ul class="list-group list-group-flush pb-4">
+            <li class="list-group-item">Cell : 0321 8411185</li>
+            <li class="list-group-item">Email : baburrana@gmail.com</li>
+            <li class="list-group-item">
+              Visit : C4/36, Business Bay, Lake City, Lahore.
+            </li>
+            <li class="list-group-item">
+              OR : Fairways Commercial, Defence Raya Golf, Phase 6, DHA Lahore.
+            </li>
+          </ul>
+        </div>
+        <div class="text-center copyright">
+          Trophy Property &reg; All rights reserved | Email:
+          <a href="#">baburrana@gmail.com</a>
+        </div>
+      </div>
+    </section>
+
+    <!----------------------------------- script-section ------------------------------------------>
+
+    <script>
+      let currentImage;
+      function myFunction(imgs) {
+        // Get the expanded image
+        var expandImg = document.getElementById("expandedImg");
+        // Get the image text
+        var imgText = document.getElementById("imgtext");
+        // Use the same src in the expanded image as the image being clicked on from the grid
+        expandImg.src = imgs.dataset.image;
+        // Use the value of the alt attribute of the clickable image as text inside the expanded image
+        imgText.innerHTML = imgs.alt;
+        // Show the container element (hidden with CSS)
+        expandImg.parentElement.style.display = "block";
+        // console.log(expandImg.src);
+        currentImage = expandImg.src;
+
+        document
+          .getElementById("download-img")
+          .setAttribute("href", currentImage);
+
+        var focusView = document.getElementById("expandedImg");
+        focusView.style.display = "";
+        focusView.scrollIntoView();
+      }
+    </script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+      -->
+  </body>
+</html>
